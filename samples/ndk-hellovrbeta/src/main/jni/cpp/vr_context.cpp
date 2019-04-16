@@ -15,9 +15,9 @@
 #include "udp.h"
 #include "asset.h"
 
-#include "../headers/vr/gvr/capi/include/gvr_types.h"
-#include "../headers/vr/gvr/capi/include/gvr_controller.h"
-#include "../headers/vr/gvr/capi/include/gvr_types.h"
+#include "../include/gvr_types.h"
+#include "../include/gvr_controller.h"
+#include "../include/gvr_types.h"
 
 
 struct TrackingFrame {
