@@ -13,6 +13,6 @@ include ':samples:sdk-videoplayer'
 // folder. Then uncomment these lines to enable the NDK samples and synchronize
 // Android Studio.
 //include ':samples:ndk-hellovr'
-//include ':samples:ndk-hellovrbeta'
+include ':samples:ndk-hellovrbeta'
 
 

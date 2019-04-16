@@ -19,8 +19,8 @@
 #include <memory>
 
 #include "hello_vr_beta_app.h"  // NOLINT
-#include "vr/gvr/capi/include/gvr.h"
-#include "vr/gvr/capi/include/gvr_audio.h"
+#include "include/gvr.h"
+#include "include/gvr_audio.h"
 
 #define JNI_METHOD(return_type, method_name) \
   JNIEXPORT return_type JNICALL              \

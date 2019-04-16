@@ -23,8 +23,8 @@
 #include <cmath>
 
 #include "util.h"  // NOLINT
-#include "vr/gvr/capi/include/gvr_types.h"
-#include "vr/gvr/capi/include/gvr_version.h"
+#include "include/gvr_types.h"
+#include "include/gvr_version.h"
 
 namespace ndk_hello_vr_beta {
 

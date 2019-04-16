@@ -19,7 +19,7 @@
 #include <EGL/egl.h>
 #include <GLES2/gl2.h>
 
-#include "vr/gvr/capi/include/gvr.h"
+#include "include/gvr.h"
 
 namespace ndk_hello_vr_beta {
 

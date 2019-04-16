@@ -29,7 +29,7 @@
 #include <string>
 #include <vector>
 
-#include "vr/gvr/capi/include/gvr.h"
+#include "include/gvr.h"
 
 #define LOG_TAG "HelloVrBetaApp"
 #define LOGW(...) __android_log_print(ANDROID_LOG_WARN, LOG_TAG, __VA_ARGS__)

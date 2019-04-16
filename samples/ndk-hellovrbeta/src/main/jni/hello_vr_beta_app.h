@@ -29,10 +29,10 @@
 #include "controllers.h"  // NOLINT
 #include "shader_program.h"  // NOLINT
 #include "util.h"  // NOLINT
-#include "vr/gvr/capi/include/gvr.h"
-#include "vr/gvr/capi/include/gvr_audio.h"
-#include "vr/gvr/capi/include/gvr_controller.h"
-#include "vr/gvr/capi/include/gvr_types.h"
+#include "include/gvr.h"
+#include "include/gvr_audio.h"
+#include "include/gvr_controller.h"
+#include "include/gvr_types.h"
 
 namespace ndk_hello_vr_beta {
 
