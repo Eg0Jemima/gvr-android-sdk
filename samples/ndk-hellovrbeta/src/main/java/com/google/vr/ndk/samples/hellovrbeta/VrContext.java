@@ -1,11 +1,4 @@
-package com.polygraphene.alvr;
-
-import android.app.Activity;
-import android.content.res.AssetManager;
-import android.util.Log;
-import android.view.Surface;
-
-import java.util.Arrays;
+package com.google.vr.ndk.samples.hellovrbeta;
 
 public class VrContext {
 

@@ -1,4 +1,4 @@
-package com.polygraphene.alvr;
+package com.google.vr.ndk.samples.hellovrbeta;
 
 public class LatencyCollector {
     public static native void DecoderInput(long frameIndex);

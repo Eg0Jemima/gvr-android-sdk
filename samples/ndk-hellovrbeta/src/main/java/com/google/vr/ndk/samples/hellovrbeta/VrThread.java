@@ -1,16 +1,13 @@
-package com.polygraphene.alvr;
+package com.google.vr.ndk.samples.hellovrbeta;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.SurfaceTexture;
 import android.opengl.EGL14;
 import android.opengl.EGLContext;
-import android.opengl.GLES11Ext;
-import android.opengl.GLES20;
 import android.util.Log;
 import android.view.Surface;
 
-import java.nio.IntBuffer;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 class VrThread extends Thread {

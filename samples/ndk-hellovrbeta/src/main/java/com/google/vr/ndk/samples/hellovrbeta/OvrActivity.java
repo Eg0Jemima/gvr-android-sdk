@@ -1,4 +1,4 @@
-package com.polygraphene.alvr;
+package com.google.vr.ndk.samples.hellovrbeta;
 
 import android.os.Bundle;
 import android.view.SurfaceHolder;
@@ -43,6 +43,6 @@ public class OvrActivity extends AlvrActivity {
 
     @Override
     public String getAppName() {
-        return getString(R.string.ovr_name);
+        return getString(R.string.app_name);
     }
 }

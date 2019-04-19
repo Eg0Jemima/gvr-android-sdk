@@ -1,12 +1,12 @@
-package com.polygraphene.alvr;
+package com.google.vr.ndk.samples.hellovrbeta;
 
 
 import android.opengl.GLES11Ext;
 import android.opengl.GLES20;
-import com.google.vr.sdk.base.Eye;
+
 import java.nio.FloatBuffer;
 
-import static com.polygraphene.alvr.Utils.checkGlError;
+import static com.google.vr.ndk.samples.hellovrbeta.Utils.checkGlError;
 
 /**
  * Utility class to generate & render spherical meshes for video or images. Use the static creation

@@ -1,4 +1,4 @@
-package com.polygraphene.alvr;
+package com.google.vr.ndk.samples.hellovrbeta;
 
 class NAL {
     public int length;

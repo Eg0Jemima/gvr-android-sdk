@@ -1,4 +1,4 @@
-package com.polygraphene.alvr;
+package com.google.vr.ndk.samples.hellovrbeta;
 
 import android.opengl.GLES11Ext;
 import android.opengl.GLES20;

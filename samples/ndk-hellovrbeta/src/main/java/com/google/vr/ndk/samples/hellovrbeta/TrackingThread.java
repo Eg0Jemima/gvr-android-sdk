@@ -1,9 +1,8 @@
-package com.polygraphene.alvr;
+package com.google.vr.ndk.samples.hellovrbeta;
 
 import android.opengl.EGLContext;
 import android.util.Log;
 
-import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 class TrackingThread extends ThreadBase {

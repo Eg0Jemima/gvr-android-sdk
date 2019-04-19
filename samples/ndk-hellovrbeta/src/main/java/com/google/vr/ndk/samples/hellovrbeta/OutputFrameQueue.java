@@ -1,4 +1,4 @@
-package com.polygraphene.alvr;
+package com.google.vr.ndk.samples.hellovrbeta;
 
 import android.media.MediaCodec;
 import android.support.annotation.NonNull;
