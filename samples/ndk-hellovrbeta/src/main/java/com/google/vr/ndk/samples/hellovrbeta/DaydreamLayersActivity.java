@@ -1,7 +1,6 @@
-package com.polygraphene.alvr;
+package com.google.vr.ndk.samples.hellovrbeta;
 
 import android.graphics.Point;
-import android.graphics.RectF;
 import android.graphics.SurfaceTexture;
 import android.opengl.GLES11Ext;
 import android.opengl.GLES20;
@@ -10,7 +9,6 @@ import android.opengl.Matrix;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Pair;
-import android.util.TimeUtils;
 import android.view.Surface;
 
 import com.google.vr.ndk.base.AndroidCompat;
@@ -21,10 +19,8 @@ import com.google.vr.ndk.base.Frame;
 import com.google.vr.ndk.base.GvrApi;
 import com.google.vr.ndk.base.GvrLayout;
 import com.google.vr.ndk.base.SwapChain;
-import com.google.vr.sdk.base.Eye;
 
 import java.nio.IntBuffer;
-import java.util.Arrays;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
@@ -79,7 +75,7 @@ public class DaydreamLayersActivity extends AlvrActivity {
 
     @Override
     public String getAppName() {
-        return getString(R.string.dd_name);
+        return getString(R.string.app_name);
     }
 
     private class Renderer implements GLSurfaceView.Renderer {
