@@ -72,7 +72,12 @@ public class HelloVrBetaActivity extends Activity {
       };
 
   @Override
-  protected void onCreate(Bundle savedInstanceState) {
+  public String getAppName() {
+    return getString(R.string.app_name);
+  }
+
+  @Override
+  public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
     // Ensure fullscreen immersion.
