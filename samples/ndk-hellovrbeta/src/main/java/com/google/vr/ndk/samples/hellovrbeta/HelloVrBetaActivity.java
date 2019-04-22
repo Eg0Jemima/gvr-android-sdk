@@ -63,6 +63,7 @@ public class HelloVrBetaActivity extends AlvrActivity {
     System.loadLibrary("gvr");
     System.loadLibrary("gvr_audio");
     System.loadLibrary("hellovrbeta_jni");
+    System.loadLibrary("native-lib");
   }
 
   // Opaque native pointer to the native HelloVrBetaApp instance.
@@ -282,10 +283,10 @@ public class HelloVrBetaActivity extends AlvrActivity {
       displaySurface = new Surface(displayTexture);
 
 
-//      vrThread = new VrThread(HelloVrBetaActivity.this, displayTexture, displaySurface, mGvrApi.getNativeGvrContext());
-//      vrThread.onSurfaceCreated();
-//      vrThread.start();
-//      vrThread.onResume();
+      vrThread = new VrThread(HelloVrBetaActivity.this, displayTexture, displaySurface, mGvrApi.getNativeGvrContext());
+      vrThread.onSurfaceCreated();
+      vrThread.start();
+      vrThread.onResume();
 
       nativeOnSurfaceCreated(nativeApp);
     }
@@ -345,7 +346,7 @@ public class HelloVrBetaActivity extends AlvrActivity {
       //Log.e("XXX", Arrays.toString(translationMatrix));
 
       // Set tracking and save the current head pose. The headFromWorld value is saved in frameTracker via a call to trackFrame by the TrackingThread.
-//      vrThread.setTracking(-translationMatrix[12], 1.8f - translationMatrix[13], -translationMatrix[14], x, y, z, w, headFromWorld, poseTime);
+      vrThread.setTracking(-translationMatrix[12], 1.8f - translationMatrix[13], -translationMatrix[14], x, y, z, w, headFromWorld, poseTime);
       //Log.e("XXX", "saving frame " + z + " " + Arrays.toString(m) + Math.sqrt(x * x + y * y + z * z + w * w));
 
       // At this point, the pose is sent to the PC. On some future draw call, we read it back.
