@@ -22,6 +22,11 @@ set_target_properties(
     gvraudio-lib
     PROPERTIES IMPORTED_LOCATION ${GVR_LIBPATH}/${ANDROID_ABI}/libgvr_audio.so)
 
+add_library(native-lib SHARED IMPORTED)
+set_target_properties(
+        native-lib
+        PROPERTIES IMPORTED_LOCATION ${GVR_LIBPATH}/${ANDROID_ABI}/libnative-lib.so)
+
 # Include general Android libraries.
 find_library(android-lib android)
 find_library(EGL-lib EGL)
@@ -32,6 +37,7 @@ find_library(log-lib log)
 target_link_libraries(hellovrbeta_jni
     gvr-lib
     gvraudio-lib
+    native-lib
 
     ${android-lib}
     ${EGL-lib}
